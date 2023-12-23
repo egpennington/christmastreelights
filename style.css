@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,11 +10,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    color: #006400;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+h2 {
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    text-shadow: 2px 2px 2px #006400;
 }
 
 .audio {
     opacity: 0.5;
+    height: 20px;
 }
 
 section {
@@ -107,7 +121,7 @@ img {
 footer {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     font-size: 0.7rem;
     width: 100%;
@@ -146,14 +160,12 @@ footer {
     }
 
     footer {
-        display: grid;
-        grid-gap: 3px;
-        font-size: 12px;
+        font-size: 9px;
+        
     }
 
     .social-icons {
-        display: grid;
-        grid-gap: 3px;
         font-size: 10px;
+        display: none;
     }
 }
