@@ -6,8 +6,9 @@
  * Stretch Goal:
  *    Make the blue and red lights flash alternately.
  **/ 
- let redLights = document.getElementsByClassName("red")
- let blueLights = document.getElementsByClassName("blue")
+ const redLights = document.getElementsByClassName("red")
+ const blueLights = document.getElementsByClassName("blue")
+ const delay = 800
 
 function treeLightsOn() {
     for (let i = 0; i < redLights.length; i++) {       
@@ -16,8 +17,8 @@ function treeLightsOn() {
     for (let j = 0; j < blueLights.length; j++) {
         setTimeout( function() {
             blueLights[j].classList.toggle("lights-on");
-        }, 800)
+        }, delay)
     }
 }
 
-setInterval(treeLightsOn, 800)
+setInterval(treeLightsOn, delay)
